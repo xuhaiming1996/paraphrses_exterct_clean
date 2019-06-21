@@ -1,0 +1,15 @@
+1.句子长度超过25的全部不要
+2.bertService 启动
+bert-serving-start \
+-model_dir=/paraphrase_classify/results/BERT/chinese_L-12_H-768_A-12/ \
+-num_worker=2 \
+-port=8000\
+-max_seq_len=None \
+-pooling_strategy=REDUCE_MEAN \
+-pooling_layer=-1 \
+-device_map=[4,5] \
+-mask_cls_sep=True
+
+
+
+smooth 是一种正则化的侧率
